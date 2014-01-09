@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Thu Jan 09 20:21:54 IST 2014
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=eff_fat.jar
+manifest.mergeall=true
+manifest.mainclass=com.ebizx.file.EbizxFileUtils
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=
