@@ -15,11 +15,12 @@ public class JarReader {
 		Enumeration<JarEntry>  entries = jar.entries();
 		String line;
 		StringBuilder sb = new StringBuilder();
+		InputStream is = null;
+		BufferedReader br = null;
 		while(entries.hasMoreElements()) {
 			JarEntry val = entries.nextElement();
 			if(val.getName().equals(fileName)) {				
-				InputStream is = jar.getInputStream(val);
-				BufferedReader br = null;				
+				is = jar.getInputStream(val);								
 				br = new BufferedReader(new InputStreamReader(is));
 				while ((line = br.readLine()) != null) {
 					sb.append(line);
